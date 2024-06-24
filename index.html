@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registrationPage.css"/>
+    <script type="text/javascript" src="registration.js"></script>
+</head>
+<body>
+    <div id="d1">
+        <h1 align="center">Register Here!</h1>
+    </div>
+    <div id="d2" >
+        <table id="t">
+            <tr>
+                <td style="padding-left:60px; color:#09ee5f;font-weight: 300; font-size: larger;" colspan="2"><b>Registration Form</b></td>
+            </tr>
+            <tr>
+                <td id="t1">First Name: </td>
+                <td><input id="f1" type="text" placeholder="ex:John" onblur="validateFirstName()" />
+                    <span id="fname-msg" style="color: red;"></span> </td>
+            </tr>
+            <tr>
+                <td id="t1">Last Name: </td>
+                <td><input type="text" placeholder="ex:Doe" id="l1"onblur="validateLastName()" /> 
+                    <span id="lname-msg" style="color: red;"></span></td>
+            </tr>
+            <tr>
+                <td id="t1">Email Address: </td>
+                <td><input type="email" placeholder="ex:johndoe@gmail.com" id="email" onblur="validateEmail()" />
+                    <span id="email-msg" style="color: red;"></span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td id="t1">User Name</td>
+                <td><input type="text" placeholder="ex:JohnDoe16" id="user" onblur="validateUsername()"/> 
+                <span id="userval" style="color: red;"></span></td>
+
+            </tr>
+            <tr>
+                <td id="t1">Password: </td>
+                <td>
+                    <input type="password" id="password" placeholder="Enter password" onblur="validatePassword()"/>
+                </td>
+            </tr>
+            <tr>
+                <td id="t1">Confirm Password: </td>
+                <td>
+                    <input type="password" id="confirm-password" placeholder="Confirm password" onblur="validatePassword()"/>
+                    <span id="password-msg" style="color: red;"></span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td id="t1">City</td>
+                <td>
+                    <input type="text" id="city" placeholder="ex: Delhi" onblur="validateCity()"/>
+                    <span id="city-msg" style="color: red;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td id="t1">Country</td>
+                <td>
+                    <input type="text" id="country" placeholder="ex: India" onblur="validateCountry()"/>
+                    <span id="country-msg" style="color: red;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td id="t1">Phone Number</td>
+                <td>
+                    <input type="text" id="phone" placeholder="ex: 9876543210" onblur="validatePhone()"/>
+                    <span id="phone-msg" style="color: red;"></span>
+                </td>
+            </tr>
+                <tr>
+                    <td id="t1">Gender</td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="Male"/>Male
+                        <input type="radio" name="gender" id="female" value="Female"/>Female
+                        <span id="gender-msg" style="color: red;"></span>
+                    </td>
+                </tr>
+                
+            
+            <tr>
+                <td id="submit" colspan="2">
+                    <input id="s" type="submit" value="REGISTER NOW" onclick="return validateForm()"/>
+                </td>
+            </tr>
+            
+
+            
+        </table>
+        
+    </div>
+    <div id="d3">
+        <marquee ><i><b>💥💥Register Now! Registrations will close by 3 PM today...💥💥</b></i></marquee>
+    </div>
+    <p id="p1"></p>
+
+    
+</body>
+</html>
